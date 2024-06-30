@@ -1,38 +1,107 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
+.App{
   background-color: #282c34;
-  min-height: 100vh;
+  width: 100%;
+  height: 100vh;
+}
+
+.headerContainer{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  padding: 0 20px;
+  background-color: #282c34;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #535964;
+  margin: 30px;
+  margin-top: 0;
+  padding: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container img {
+  width: 100px;
+  height: 100px;
+  margin: 0;
+  border-radius: 50px;
+}
+
+.container p{
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-size: small;
+  margin: 0;
+}
+
+
+.search-input {
+  width: 100%; /* Sets the width to 100% of the viewport */
+  height: 60px; /* Adjust height as needed */
+  display: flex; /* Allows centering the input horizontally */
+  flex-direction: column;
+  justify-content: center; /* Centers the input horizontally within the container */
+  align-items: center; /* Centers the input vertically within the container */
+}
+
+.search-input > div{
+  width: 80%;
+}
+
+.search-input > div > input {
+  /* Style the input field itself */
+  width: 100%; /* Adjust width as needed */
+  padding: 10px; /* Adjust padding as needed */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Rounded corners for a softer look */
+  font-size: 16px; /* Adjust font size as needed */
+  font-family: 'Poppins', sans-serif; /* Optional: Modern font */
+  color: #333; /* Text color */
+  outline: none; /* Remove default outline on focus */
+}
+
+.search-input input:focus {
+  /* Style the input field on focus */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Slight focus effect */
+}
+
+.search-input p{
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+
+}
+
+
+.card-container {
+  display: flex; /* Arrange cards horizontally */
+  flex-wrap: wrap; /* Allow cards to wrap to multiple lines if needed */
+  justify-content: space-around; /* Distribute cards with some spacing */
+  margin: 20px auto; /* Add some margin for better placement */
+  width: 80%; /* Adjust container width as needed */
+}
+
+.card {
+  background-color: #fff; /* White background */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  border-radius: 5px; /* Rounded corners */
+  margin: 10px; /* Spacing between cards */
+  text-align: center; /* Center content horizontally */
+  width: 300px; /* Adjust card width as needed */
+}
+
+.card img {
+  width: 100%; /* Image covers the entire card width */
+  height: 225px; /* Adjust image height as needed */
+  object-fit: contain; /* Crop image to fit within the container */
+  padding: 5px;
+}
+
+.card h2 {
+  padding: 0; /* Padding for the title */
+  font-size: 18px; /* Adjust title font size */
+  font-family: 'Poppins', sans-serif; /* Optional: Modern font */
 }
